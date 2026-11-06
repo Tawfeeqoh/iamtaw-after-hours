@@ -1,0 +1,1 @@
+{"$schema":"https://openapi.vercel.sh/vercel.json","framework":null,"installCommand":"","buildCommand":"","outputDirectory":"dist","headers":[{"source":"/vendor/(.*)","headers":[{"key":"Cache-Control","value":"public, max-age=86400"}]},{"source":"/assets/(.*)","headers":[{"key":"Cache-Control","value":"public, max-age=86400"}]}]}

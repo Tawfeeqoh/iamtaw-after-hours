@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#141019"><meta name="description" content="AFTER HOURS. An interactive world inside iamtaw's mind. Explore code, language and living machines in a tactile 3D experiment by Tawfeeqoh Hamzat.">
+<title>AFTER HOURS — inside iamtaw's mind</title>
+<link rel="icon" href="./assets/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="./assets/manrope-800.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<a class="skip" href="#chapters">Skip to chapter navigation</a>
+<canvas id="world" aria-label="Interactive three dimensional creative workshop. Use the chapter buttons and scene action button to explore." tabindex="0"></canvas>
+<div class="ambient" aria-hidden="true"></div><div class="grain" aria-hidden="true"></div>
+<header class="topbar">
+<a class="brand" href="#desk" aria-label="iamtaw — return to the desk"><span class="brand-i">i<span></span></span>amtaw<span class="brand-divider"></span><span class="edition">EXPERIMENT 001</span></a>
+<div class="top-actions"><span class="live-dot"></span><span class="time">02:17 AM</span><button id="sound" class="small-button" aria-pressed="false" aria-label="Turn ambient sound on"><span class="wave" aria-hidden="true">▂▅▃▆▂</span><span class="sound-label">SOUND OFF</span></button><button id="help" class="round-button" aria-label="Open controls and accessibility settings">?</button></div>
+</header>
+<main>
+<section class="story" aria-labelledby="title">
+<div class="eyebrow"><span class="eyebrow-line"></span><span id="chapter-kicker">A WINDOW INTO MY HEAD</span></div>
+<h1 id="title"><span>AFTER</span><span class="outline">HOURS<span class="title-star">✳</span></span></h1>
+<p class="description" id="description">The world goes quiet.<br> My mind does the opposite.</p>
+<div class="action-row"><button id="action" class="main-button" disabled><span id="action-label">Waking up the world…</span><span class="arrow" aria-hidden="true">↗</span></button><span class="action-note" id="action-note">An interactive trip<br>through a restless mind.</span></div>
+</section>
+<div class="scene-tag" aria-hidden="true"><span class="tag-dot"></span><span id="scene-tag-text">THE DESK / A PLACE TO BEGIN</span><span class="tag-coord" id="coordinates">X 00 · Y 00</span></div>
+<div class="scene-hint" id="scene-hint"><span class="mouse-icon" aria-hidden="true"></span><span id="hint-text">Move to look around · drag to orbit</span></div>
+<div class="scene-status" id="scene-status" role="status" aria-live="polite"></div>
+<div class="loading" id="loading"><span></span>BUILDING A SMALL UNIVERSE</div>
+</main>
+<footer class="bottom-bar">
+<div class="chapter-counter"><strong id="current-number">01</strong><span>/ 05</span></div>
+<nav class="chapters" id="chapters" aria-label="Explore chapters">
+<button data-scene="0" class="active" aria-current="step"><span>01</span>The desk</button>
+<button data-scene="1"><span>02</span>Architecture</button>
+<button data-scene="2"><span>03</span>Language</button>
+<button data-scene="3"><span>04</span>The machine</button>
+<button data-scene="4"><span>05</span>The reveal</button>
+</nav>
+<button class="next" id="next" aria-label="Next chapter"><span id="next-label">KEEP EXPLORING</span><span aria-hidden="true">↓</span></button>
+</footer>
+<div class="progress-track" aria-hidden="true"><span id="progress"></span></div>
+<button id="work-button" class="work-button">Selected work <span>↗</span></button>
+<dialog id="help-dialog" class="modal"><form method="dialog"><button class="close" aria-label="Close controls">×</button></form><div class="eyebrow">MAKE YOURSELF AT HOME</div><h2>A little orientation.</h2><p>Explore with the chapter buttons, scroll wheel, or arrow keys. Swipe up or down on the scene to change chapters.</p><div class="control-list"><p><span>Look around</span><strong>Move your pointer</strong></p><p><span>Rotate the world</span><strong>Drag left or right</strong></p><p><span>Interact</span><strong>Click objects or use the action button</strong></p><p><span>Close a panel</span><strong>Escape</strong></p></div><label class="setting"><span>Reduce motion</span><input id="motion" type="checkbox"></label><label class="setting"><span>Performance mode <small>Lower rendering resolution</small></span><input id="performance" type="checkbox"></label><p class="fine-print">Sound is optional and starts only when you turn it on. No microphone. No tracking. Just a small world.</p></dialog>
+<dialog id="work-dialog" class="modal work-modal"><form method="dialog"><button class="close" aria-label="Close selected work">×</button></form><div class="eyebrow">OUTSIDE THIS LITTLE UNIVERSE</div><h2>Things I've put<br>into the world.</h2><a class="project" href="https://portfolio.tawfeeqoh.name.ng" target="_blank" rel="noopener"><span class="project-number">01</span><span><strong>The portfolio</strong><small>Websites, experiments & selected work</small></span><span>↗</span></a><a class="project" href="https://journal.tawfeeqoh.name.ng" target="_blank" rel="noopener"><span class="project-number">02</span><span><strong>THE MARGIN</strong><small>Opinions that don't stay in the margins</small></span><span>↗</span></a><a class="project" href="https://tawfeeqoh.name.ng" target="_blank" rel="noopener"><span class="project-number">03</span><span><strong>Meet Tawfeeqoh</strong><small>Developer · Copywriter · AI Automation Specialist</small></span><span>↗</span></a></dialog>
+<noscript><div class="no-js">This world needs JavaScript. You can still explore <a href="https://portfolio.tawfeeqoh.name.ng">Tawfeeqoh's portfolio ↗</a>.</div></noscript>
+<script type="module" src="./app.js"></script>
+</body></html>
